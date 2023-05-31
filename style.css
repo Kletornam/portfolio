@@ -1,80 +1,117 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-  }
-  
-  body{
-    background-image: url('./img/New\ Project.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .top-menu{
-    display:flex;
-    margin: 1rem;
-    justify-content: space-between;
-    align-items:center;
-    color: #f4a261;
-    font-weight:bold;
-  }
-  
-  .top-menu img{
-    height: 24px;
-    width: 24px;
-  }
-  .top-menu ul{
-    list-style:none
-  }
-  .top-menu p:hover::after{
-    content: " | Portfolio Site";
-  }
-  .top-menu a{
-    text-decoration: none;
-    padding: 0 0.5rem;
-    color:#f4a261;
-  }
-  .top-menu a:hover{
-    color:#fff;
-  }
-  .hero-section{
-    padding:6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-  }
-  
-  .hero-section h1{
-    font-size:6rem;
-  }
-  .hero-section p{
-    font-weight:bold;
-    font-size: 1rem;
-    margin: 1rem 0;
-  }
-  
-  .hero-buttons{
-    padding: 1.5rem;
-  }
-  
-  .hero-buttons button{
-    padding: 0.5rem;
-    margin: 1rem;
-    border-radius: 5px;
-    border: none;
-    color: #064976;
-    font-weight: 700;
-    background-color: #f4a261;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
-  .hero-buttons button:hover{
-    border-radius: 5px;
-    border: 2px solid #f4a261;
-    scale: 1.1;
-    color: #f4a261;
-    font-weight: 900;
-    background-color: transparent;
+body {
+  background-color: #064976;
+  background-image: url("./img/bg-portfolio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-menu {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  color: gold;
+  font-weight: bold;
+}
+
+.top-menu img {
+  height: 24px;
+  width: 24px;
+}
+.top-menu ul {
+  list-style: none;
+}
+.top-menu a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  color: gold;
+  font-size: 1rem;
+}
+.top-menu a:hover {
+  color: #fff;
+}
+.hero-section {
+  padding: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 6rem;
+}
+.hero-section p {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.hero-buttons {
+  padding: 1.5rem;
+}
+
+.hero-buttons button {
+  padding: 0.5rem;
+  margin: 1rem;
+  color: #064976;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  background-color: gold;
+}
+.hero-buttons button a{
+  text-decoration: none;
+  color: #064976;
+  font-size: 1rem;
+}
+
+.hero-buttons button:hover > a{
+  color: gold;
+}
+.hero-buttons button:hover {
+border-radius: 5px;
+  border: 2px solid gold;
+  scale: 1.1;
+  color: gold;
+  font-weight: 900;
+  background-color: transparent;
+}
+.projects .items {
+  margin: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width:480px) {
+  .projects .items {
+    display: flex;
+    flex-direction: column;   
   }
+}
+.projects .project-box {
+  width: 100vh;
+}
+
+.projects .project-box img {
+  max-width:100%;
+}
+.projects .project-box img:hover {
+  scale: 1.05;
+  margin-bottom: 15px;
+}
+.project-box h4{
+  color: #fff;
+}
+.project-box a{
+  text-decoration: none;
+  color: gold;
+  cursor: pointer;
+}
