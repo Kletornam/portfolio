@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora:ital@0;1&family=Montserrat:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body {
   background-image: url("./img/bg-portfolio.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  font-family: 'Hind Madurai', sans-serif;
 }
 
 .top-menu {
@@ -19,6 +21,8 @@ body {
   align-items: center;
   color: gold;
   font-weight: bold;
+  font-family: 'Lora', serif;
+  font-style: italic;
 }
 
 .top-menu img {
@@ -48,11 +52,23 @@ body {
 
 .hero-section h1 {
   font-size: 6rem;
+  font-family: 'Montserrat', sans-serif;
 }
 .hero-section p {
   font-weight: bold;
   font-size: 1rem;
   margin: 1rem 0;
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+@media(max-width:786px) {
+.top-menu{
+  flex-direction:column;
+}
+.hero-section h1 {
+  font-size: 3rem;
+}
 }
 
 .hero-buttons {
@@ -60,6 +76,8 @@ body {
 }
 
 .hero-buttons button {
+  font-family: 'Lora', serif;
+  font-style: italic;
   padding: 0.5rem;
   margin: 1rem;
   color: #064976;
