@@ -1,50 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>etornam | Sample Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>etornam | Projects</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/gold--oak.png" type="image/x-icon">
+    <style>
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h4 {
+        width: 100%;
+        background-color: #fff;
+        font-size: 1.5rem;
+        color: #151e3f;
+        text-align: center;
+        margin: 1.4rem 0;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 1rem;
+      }
+
+      .media {
+        max-width: 300px;
+        max-height: 200px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .media img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .layer {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 90%;
+        background: #fff;
+        color: #151e3f;
+        transition: all 0.9s ease;
+        p {
+          transition: all 0.9s ease;
+          transform: scale(0.1);
+        }
+      }
+
+      p {
+        text-align: center;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+      }
+
+      .media:hover .layer {
+        opacity: 0.8;
+        width: 90%;
+        transition: all 0.5s ease;
+        p {
+          transform: scale(1);
+          transition: all 0.9s ease;
+        }
+      }
+      .other-works h4{
+        color: #fff;
+        background-color:transparent;
+      }
+      .other-works ul>li{
+        list-style-type:none;
+        display: inline-block;
+        padding: 0 0.5rem;
+      }
+      .other-works a{
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Lora',serif;
+        font-weight:  bold;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <div class="top-menu">
-        <img src="./img/gold--oak.png" alt="oak-logo" />
-        <p>etornam.me | Projects</p>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://kletornam.github.io/portfolio/">Home</a>
-              <a href="https://github.com/Kletornam">GitHub</a>
-              <a href="https://www.linkedin.com/in/etornam-me/">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <div class="top-menu">
+            <img src="./img/gold--oak.png" alt="oak-logo" />
+            <p>etornam.me | Projects</p>
+            <nav>
+              <ul>
+                <li>
+                  <a href="https://kletornam.github.io/portfolio/">Home</a>
+                  <a href="https://github.com/Kletornam">GitHub</a>
+                  <a href="https://www.linkedin.com/in/etornam-me/">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
     </header>
-    <main class="projects">
-      <div class="items">
-        <div class="project-box">
-          <img src="./img/qr-card.jpg" alt="qr-card" />
-          <h4>QR Card Component</h4>
-          <a target="_blank" href="https://kletornam.github.io/qr-card/">View</a>
+    <main>
+      <!-- <section>
+      <h4>GitHub Hosted Projects</h4>
+      <div class="wrapper">
+        <div class="media">
+          <div class="layer">
+            <p>View QR Card Component</p>
+          </div>
+          <a target="_blank" href="https://kletornam.github.io/qr-card/"><img
+            src="/img/qr-card.jpg"
+            alt="qr-card"
+          /></a>
         </div>
-        <div class="project-box">
-          <img src="./img/product-card.jpg" alt="product-card" />
-          <h4>Product Card Component</h4>
-          <a target="_blank" href="https://kletornam.github.io/product-component/">View</a>
+        <div class="media">
+          <div class="layer">
+            <p>View Product Card Component </p>
+          </div>
+          <a target="_blank" href="https://kletornam.github.io/product-component/"><img
+            src="/img/product-card.jpg"
+            alt="product-card"
+          /></a>
         </div>
-        <div class="project-box">
-          <img src="./img/nft-card.jpg" alt="nft-card" />
-          <h4>NFT Card Component</h4>
-          <a target="_blank" href="https://kletornam.github.io/NFT-Card-Component/">View</a>
+        <div class="media">
+          <div class="layer">
+            <p>View NFT Card Component</p>
+          </div>
+          <a target="_blank" href="https://kletornam.github.io/NFT-Card-Component/"><img
+            src="/img/nft-card.jpg"
+            alt="nft-card/">
+          </a>
         </div>
-        <div class="project-box">
-          <img src="./img/github-user-search.jpg" alt="github-user-search" />
-          <h4>GitHub User Search Page</h4>
-          <a target="_blank" href="https://kletornam.github.io/github-user-search/">View</a>
+        <div class="media">
+          <div class="layer">
+            <p>View GitHub User Search Page</p>
+          </div>
+          <a target="_blank" href="https://kletornam.github.io/github-user-search/"><img
+            src="/img/github-user-search.jpg"
+            alt="github-user-search"/>
+          </a>
         </div>
       </div>
+      <h4>Graphic Designs</h4>
+
+      <div class="wrapper">
+        <div class="media">
+          <img
+            src="img/dsg-1.jpg"
+            alt="dsg-1"
+          />
+        </div>
+        <div class="media">
+          <img
+            src="img/dsg-2.jpg"
+            alt="dsg-2"
+          />
+        </div>
+        <div class="media">
+          <img
+            src="img/dsg-3.jpg"
+            alt="dsg-3"
+          />
+        </div>
+        <div class="media">
+          <img
+            src="img/dsg-4.jpg"
+            alt="dsg-4"
+          />
+        </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="media">
+          <img
+            src="img/dsg-5.png"
+            alt="dsg-5"
+          />
+        </div>
+        <div class="media">
+          <img
+            src="img/dsg-6.png"
+            alt="dsg-6"
+          />
+        </div>
+        <div class="media">
+          <img
+            src="img/dsg-7.jpg"
+            alt="dsg-7"
+          />
+        </div>
+        <div class="media">          
+          <img
+            src="img/dsg-8.png"
+            alt="dsg-8"
+          />
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="media">
+          <img
+            src="img/dsg-9.png"
+            alt="dsg-9"
+          />
+        </div>
+        <div class="media">
+          <img
+            src="img/dsg-10.png"
+            alt="dsg-10"
+          />
+        </div>
+        <div class="media">
+          <img
+            src="img/dsg-11.jpg"
+            alt="dsg-11"
+          />
+        </div>
+        <div class="media">          
+          <img
+            src="img/dsg-12.jpg"
+            alt="dsg-12"
+          />
+        </div>
+      </div>
+      </section> -->
+      <section>
+         <div class="other-works">
+      <h4><u>Other Works</u></h4>
+      <ul>
+        <li><a href="https://lonestarcell.com">Lone star cell</a></li>
+        <li><a href="https://pronaturalgh.com">Pro-Natural</a></li>
+        <li><a href="http://"></a></li>
+        <li><a href="http://"></a></li>
+        <li><a href="http://"></a></li>
+      </ul>
+     </div>
+      </section>
+    
     </main>
   </body>
 </html>

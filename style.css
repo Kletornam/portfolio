@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: 'Lora','Monseratt', 'Hindi Madurai', serif;
 }
 
 body {
@@ -21,8 +21,6 @@ body {
   align-items: center;
   color: gold;
   font-weight: bold;
-  font-family: 'Lora', serif;
-  font-style: italic;
 }
 
 .top-menu img {
@@ -32,11 +30,17 @@ body {
 .top-menu ul {
   list-style: none;
 }
-.top-menu a {
+.top-menu  p{
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+  .top-menu a {
   text-decoration: none;
   padding: 0 0.5rem;
   color: gold;
   font-size: 1rem;
+  font-family: 'Lora', serif;
+  font-style: italic;
 }
 .top-menu a:hover {
   color: #fff;
@@ -74,10 +78,7 @@ body {
 .hero-buttons {
   padding: 1.5rem;
 }
-
 .hero-buttons button {
-  font-family: 'Lora', serif;
-  font-style: italic;
   padding: 0.5rem;
   margin: 1rem;
   color: #064976;
@@ -90,6 +91,8 @@ body {
   text-decoration: none;
   color: #064976;
   font-size: 1rem;
+  font-family: 'Lora', serif;
+  font-style: italic;
 }
 
 .hero-buttons button:hover > a{
