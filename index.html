@@ -7,12 +7,13 @@
     <link rel="shortcut icon" href="./img/gold--oak.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/gold--oak.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" />
   </head>
   <body>
     <header>
       <div class="top-menu">
           <img src="./img/gold--oak.png" alt="oak-logo" />
-          <p>etornam.me</p>
+          <p>etornam.me | Portfolio</p>
           <nav>
             <ul>
               <li>
@@ -25,19 +26,81 @@
         </div>
     </header>
     <main>
-      <div>
-        <div class="hero-section">
-          <div>
-            <h1>I am a Web<br />Developer</h1>
-            <p>intern with Trestle Academy</p>
-            <div class="hero-buttons">
-              <button><a target="_blank" href="https://www.linkedin.com/in/etornam-me/">LinkedIn</a></button>
-              <button><a target="_blank" href="https://github.com/Kletornam">GitHub</a></button>
-              <button><a target="_self" href="projects.html">Projects</a></button>
+      <section>       
+        <div>
+          <div class="hero-section">
+            <div>
+              <h1>I am a Web<br />Developer</h1>
+              <p>intern with Trestle Academy</p>
+              <div class="hero-buttons">
+                <button><a target="_blank" href="https://www.linkedin.com/in/etornam-me/">LinkedIn</a></button>
+                <button><a target="_blank" href="https://github.com/Kletornam">GitHub</a></button>
+                <button><a target="_self" href="#projects">Projects</a></button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section id="about" class="skill-section">
+        <div class="about-card">
+          <div class="section-title"><h4>About</h4></div>
+          <p>I'm a web developer, searching, learning and growing. I have listed out my skills and project below. You can also reach me </p>
+        <h4>Skills:</h4>
+          <marquee behavior="scroll">
+            <li><i class="fa-brands fa-html5 fa-2xl"></i></li>
+            <li><i class="fa-brands fa-css3-alt fa-2xl"></i></li>
+            <li><i class="fa-brands fa-js fa-2xl"></i></li>
+            <li><i class="fa-brands fa-wordpress fa-2xl"></i></li>
+            <li><i class="fa-brands fa-react fa-2xl"></i></li>
+          </marquee>
+        </div>
+      </section>
+      <section id="projects" class="project-section">
+        <div class="section-title">
+          <h4>Projects</h4>
+        </div>
+          <div class="wrapper">
+            <div class="media">
+              <div class="layer">
+                <p>View QR Card Component</p>
+              </div>
+              <a target="_blank" href="https://kletornam.github.io/qr-card/"><img
+                src="img/qr-card.jpg"
+                alt="qr-card"
+              /></a>
+            </div>
+            <div class="media">
+              <div class="layer">
+                <p>View Product Card Component </p>
+              </div>
+              <a target="_blank" href="https://kletornam.github.io/product-component/"><img
+                src="img/product-card.jpg"
+                alt="product-card"
+              /></a>
+            </div>
+            <div class="media">
+              <div class="layer">
+                <p>View NFT Card Component</p>
+              </div>
+              <a target="_blank" href="https://kletornam.github.io/NFT-Card-Component/"><img
+                src="img/nft-card.jpg"
+                alt="nft-card/">
+              </a>
+            </div>
+            <div class="media">
+              <div class="layer">
+                <p>View GitHub User Search Page</p>
+              </div>
+              <a target="_blank" href="https://kletornam.github.io/github-user-search/"><img
+                src="img/github-user-search.jpg"
+                alt="github-user-search"/>
+              </a>
+            </div>
+          </div>
+          <div class="section-title">
+            <a href="projects.html">View More</a>
+          </div>
+      </section>
     </main>
   </body>
 </html>

@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora:ital@0;1&family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Lora:ital@0;1&family=Montserrat:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lora','Monseratt', 'Hindi Madurai', serif;
+  font-family: "Lora", "Monseratt", "Hindi Madurai", serif;
 }
 
 body {
   background-color: #064976;
   background-image: url("./img/bg-portfolio.jpg");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  font-family: 'Hind Madurai', sans-serif;
+  font-family: "Hind Madurai", sans-serif;
 }
 
 .top-menu {
@@ -30,16 +30,16 @@ body {
 .top-menu ul {
   list-style: none;
 }
-.top-menu  p{
-  font-family: 'Lora', serif;
+.top-menu p {
+  font-family: "Lora", serif;
   font-style: italic;
 }
-  .top-menu a {
+.top-menu a {
   text-decoration: none;
   padding: 0 0.5rem;
   color: gold;
   font-size: 1rem;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
 }
 .top-menu a:hover {
@@ -56,23 +56,23 @@ body {
 
 .hero-section h1 {
   font-size: 6rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .hero-section p {
   font-weight: bold;
   font-size: 1rem;
   margin: 1rem 0;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
 }
 
-@media(max-width:786px) {
-.top-menu{
-  flex-direction:column;
-}
-.hero-section h1 {
-  font-size: 3rem;
-}
+@media (max-width: 786px) {
+  .top-menu {
+    flex-direction: column;
+  }
+  .hero-section h1 {
+    font-size: 3rem;
+  }
 }
 
 .hero-buttons {
@@ -87,21 +87,22 @@ body {
   font-weight: 700;
   background-color: gold;
 }
-.hero-buttons button a{
+.hero-buttons button a {
   text-decoration: none;
   color: #064976;
   font-size: 1rem;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-style: italic;
 }
 
-.hero-buttons button:hover > a{
+.hero-buttons button:hover > a {
   color: gold;
 }
 .hero-buttons button:hover {
-border-radius: 5px;
+  border-radius: 5px;
   border: 2px solid gold;
-  scale: 1.1;
+  scale: 1.01;
+  transition: all 0.9s ease;
   color: gold;
   font-weight: 900;
   background-color: transparent;
@@ -111,10 +112,10 @@ border-radius: 5px;
   display: flex;
   gap: 1rem;
 }
-@media (max-width:480px) {
+@media (max-width: 480px) {
   .projects .items {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
   }
 }
 .projects .project-box {
@@ -122,17 +123,129 @@ border-radius: 5px;
 }
 
 .projects .project-box img {
-  max-width:100%;
+  max-width: 100%;
 }
 .projects .project-box img:hover {
   scale: 1.05;
   margin-bottom: 15px;
 }
-.project-box h4{
+.project-box h4 {
   color: #fff;
 }
-.project-box a{
+.project-box a {
   text-decoration: none;
   color: gold;
   cursor: pointer;
 }
+
+.project-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.project-section div.section-title h4{
+padding-top: 4rem;
+}
+
+.project-section .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.project-section .media {
+  max-width: 240px;
+  max-height: 240px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-section .media img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-section .layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #fff;
+  color: #151e3f;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1);
+  }
+}
+
+.project-section p {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.project-section .media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+.section-title{
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 700;
+}
+.section-title h4, a{
+  text-decoration: none;
+  color: #064976;
+}
+.section-title h4{
+font-size: 3rem;
+font-family: 'Montserrat', serif;
+font-style: normal;
+}
+.skill-section{
+  height:33vh;
+  margin: auto ; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #064976;
+  margin-top: 2rem;
+}
+.skill-section div{
+  width: 80vw;
+  padding: 2rem;
+}
+.skill-section marquee li{
+  display: inline;
+  list-style: none;
+}
+.skill-section marquee i{
+  padding: 3rem;
+}
+
+.about-card{
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 1px 1px 5px 1px black;
+  border-radius: 1rem;
+}
+  .about-card>h4{
+  margin-top: 1.5rem;
+  }
