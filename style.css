@@ -263,6 +263,7 @@ section.contact-section .section-title h4{
   color: #fff;
 }
 .contact-form {
+  margin: 0 2rem;
   margin-top: 1.5rem;
   /* background-color: rgb(0, 0, 0, 0.2); */
   background-color: #064976;
