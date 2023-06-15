@@ -78,7 +78,8 @@ body {
 .hero-buttons {
   padding: 1.5rem;
 }
-.hero-buttons button {
+
+.contact-form button, .hero-buttons button {
   padding: 0.5rem;
   margin: 1rem;
   color: #064976;
@@ -87,7 +88,7 @@ body {
   font-weight: 700;
   background-color: gold;
 }
-.hero-buttons button a {
+.contact-form button, .hero-buttons button a {
   text-decoration: none;
   color: #064976;
   font-size: 1rem;
@@ -98,7 +99,7 @@ body {
 .hero-buttons button:hover > a {
   color: gold;
 }
-.hero-buttons button:hover {
+.contact-form button:hover , .hero-buttons button:hover {
   border-radius: 5px;
   border: 2px solid gold;
   scale: 1.01;
@@ -249,3 +250,33 @@ font-style: normal;
   .about-card>h4{
   margin-top: 1.5rem;
   }
+
+section.contact-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+section.contact-section .section-title h4, a{
+  color: #fff;
+}
+.contact-form {
+  margin-top: 1.5rem;
+  /* background-color: rgb(0, 0, 0, 0.2); */
+  background-color: #064976;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: black 1px 1px 5px 1px;
+}
+.contact-form input, textarea{
+  border-radius: 0.2rem;
+  width: 100%;
+min-height: 2rem;
+border: none;
+margin: 0.5rem 0;
+}
+.contact-form button{
+  margin-left: 0;
+}
